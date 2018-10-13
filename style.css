@@ -22,7 +22,7 @@ body{
 }
 
 p{
-    font-size: 2vmin;
+    font-size: 2.2vmin;
     color: inherit;
     text-align: left;
 }
@@ -229,6 +229,29 @@ img{
     margin: 15px 0px 15px 0px;
     text-align: center;
     background-color: rgb(100,100,100);
+}
+
+.progress_bar{
+    position: relative;
+    background-color: rgb(100,100,100);
+    height: 2px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+}
+
+@keyframes progress_load{
+    from{ width: 0; }
+    to{ width: 100%; }
+}
+
+.progress{
+    position: relative;
+    width: 1%;
+    height: 100%;
+    background-color: white;
+    animation-name: progress_load;
+    animation-duration: 10s;
+    animation-timing-function: linear;
 }
 
 .quote{
