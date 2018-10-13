@@ -1,0 +1,245 @@
+/*
+    Hierarchy:
+    1. ID
+    2. CLASS
+    3. * (All)
+    3. ELEMTENTS
+*/
+
+/*
+    STANDARD VALUES
+*/
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    --color-charcoal: #202124
+}
+
+body{
+    background-color: var(--color-charcoal);
+}
+
+p{
+    font-size: 2vmin;
+    color: inherit;
+    text-align: left;
+}
+
+div{
+
+}
+
+section{
+
+}
+
+h1{
+    font-weight: normal;
+    font-size: 4vmin;
+    padding: 0 0 16px 0;
+    color: inherit;
+    text-align: center;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 3vmin;
+    padding-bottom: 16px;
+    color: inherit;
+}
+
+footer{
+    position: relative;
+    background-color: var(--color-charcoal);
+    box-shadow: 0px -2px 5px black;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+}
+
+a{
+    color: inherit;
+}
+
+img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navBar{
+    position: absolute;
+    color: white !important;
+    background-color: var(--color-charcoal);
+    box-shadow: 0px 2px 5px black;
+    height: 70px;
+    width: 100%;
+    display: inline;
+}
+
+.navBar .icon{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    height: 85%;
+    transform: translate(0%,7%);
+}
+
+#title{
+    font-variant: small-caps;
+    position: absolute;
+    left: 3em;
+    top: 50%;
+    transform: translate(0%,-60%);
+    font-size: 35px;
+    color: inherit;
+}
+
+.navBar .navigators{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    display: inline;
+    height: 50%;
+    width: 60%;
+    text-align: right;
+}
+
+.navBar .navigators a{
+    position: relative;
+    text-align: center;
+    padding: 5px 2vw 5px 2vw;
+    font-size: 25px;
+
+}
+
+.navBar .navigators a:hover{
+    color: var(--color-charcoal);
+    background-color: white;
+    font-weight: bolder;
+}
+
+.current_page{
+    border-bottom: 2px solid white;
+}
+
+.content{
+    position: relative;
+    top: 75px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.section{
+    position: relative;
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    background-color: var(--color-charcoal);
+    border-color: white;
+    padding: 90px 0px 90px 0px;
+    overflow: auto;
+}
+
+.section2{
+    position: relative;
+    color: var(--color-charcoal);
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    padding: 90px 0px 90px 0px;
+    overflow: auto;
+}
+
+.fullpage{
+    min-height: 600px;
+}
+
+.left_half{
+    position: relative;
+    top: 50% !important;
+    width: 50% !important;
+    left: 0%;
+    transform: translate(0%,0%);
+    float: left;
+}
+
+.right_half{
+    position: relative;
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    transform: translate(0%,0%);
+    float: left;
+}
+
+.spaced_box{
+    padding: 10% 10% 10% 10%;
+}
+
+.float_right{
+    float: right;
+}
+
+.align_right{
+    text-align: right;
+}
+
+.centered{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 7px 9px 7px 9px;
+    cursor: pointer;
+    color: inherit;
+    font-size: 16px;
+}
+
+.button2{
+    background-color: transparent;
+    border: 1px solid var(--color-charcoal);
+    padding: 7px 9px 7px 9px;
+    cursor: pointer;
+    color: inherit;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: rgba(50,50,50,150);
+}
+
+.button2:hover{
+    background-color: rgba(240,240,240,150);
+}
+
+.spacer_line{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+    background-color: rgb(100,100,100);
+}
+
+.quote{
+    font-family: 'K2D', sans-serif;
+    font-style: italic;
+}
+
+#id_quote_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+}
