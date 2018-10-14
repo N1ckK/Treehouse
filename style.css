@@ -112,7 +112,7 @@ img{
 .navBar .navigators a{
     position: relative;
     text-align: center;
-    padding: 5px 2vw 5px 2vw;
+    padding: 5px 30px 5px 30px;
     font-size: 25px;
     transition: 0.1s;
 }
@@ -176,6 +176,19 @@ img{
     width: 50%;
     transform: translate(0%,0%);
     float: left;
+}
+
+.cycle_through{
+    overflow: hidden;
+}
+
+.cycle_through div{
+    display: none;
+
+}
+
+.cycle{
+    display: block !important;
 }
 
 .spaced_box{
@@ -252,6 +265,7 @@ img{
     animation-name: progress_load;
     animation-duration: 10s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .quote{
