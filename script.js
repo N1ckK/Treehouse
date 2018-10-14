@@ -51,7 +51,6 @@ window.addEventListener('resize', function(event){
 
 
 // manages cycle throughs
-
 next = false;
 window.setInterval(function(){
     $(".cycle_through").each(function(){
@@ -67,5 +66,4 @@ window.setInterval(function(){
         });
         $(this).fadeIn( "slow", function(a) {});
     })
-
 }, 1000*10);
