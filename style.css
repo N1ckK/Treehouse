@@ -162,9 +162,8 @@ img{
 
 .left_half{
     position: relative;
-    top: 50% !important;
-    width: 50% !important;
     left: 0%;
+    width: 50%;
     transform: translate(0%,0%);
     float: left;
 }
@@ -172,7 +171,6 @@ img{
 .right_half{
     position: relative;
     left: 0%;
-    top: 50%;
     width: 50%;
     transform: translate(0%,0%);
     float: left;
@@ -184,7 +182,6 @@ img{
 
 .cycle_through div{
     display: none;
-
 }
 
 .cycle{
@@ -193,6 +190,7 @@ img{
 
 .spaced_box{
     padding: 10% 10% 10% 10%;
+    overflow: auto;
 }
 
 .float_right{

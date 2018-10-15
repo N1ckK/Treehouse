@@ -49,22 +49,32 @@ window.addEventListener('resize', function(event){
     managePageResizing();
 });
 
+function l(s){
+    console.log(s)
+}
+
+// manages progress bars
+$(".progress").each(function(){
+    console.log($(this))
+    console.log($(this).attr("duration"))
+    $(this).css("animation-duration", $(this).attr("duration") + "s");
+});
 
 // manages cycle throughs
 
-window.setInterval(function(){
-    $(".cycle_through").each(function(){
-        $(this).fadeOut( "slow", function(a) {
-            elem = $(this).find(".cycle")
+$(".cycle_through").each(function(){
+    cycle = $(this)
+    setInterval(function(){
+        cycle.fadeOut( "fast", function(a) {
+            elem = cycle.find(".cycle")
             elem.removeClass("cycle");
             index = elem.index();
-            if (index < $(this).children().length -1){
-                $(this).children()[index +1].classList.add("cycle");
+            if (index < cycle.children().length -1){
+                cycle.children()[index +1].classList.add("cycle");
             }else{
-                $(this).children()[0].classList.add("cycle");
+                cycle.children()[0].classList.add("cycle");
             }
         });
-        $(this).fadeIn( "slow", function(a) {});
-    })
-
-}, 1000*10);
+        cycle.fadeIn( "fast", function(a) {});
+    } , parseInt($(this).attr("interval"))*1000);
+})
